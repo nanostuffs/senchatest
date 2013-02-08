@@ -1,0 +1,13 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=AIzaSyBUS9ogkYNa6EAfFVRuBYgOyHwYc93Y3Tw"
+    },
+    "id": "ExtBox1-ext-gen24720",
+    "designerId": "e1db2e8b-cba9-4cb0-84ae-f3ebb2004185"
+}

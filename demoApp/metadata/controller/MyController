@@ -1,0 +1,36 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyController"
+    },
+    "id": "ExtBox1-ext-gen57671",
+    "designerId": "aa62a177-fa36-4ab3-b49d-f6b56a765a41",
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onsendNewPage",
+                "fn": "onsendNewPage",
+                "implHandler": [
+                    "    if(!Ext.getCmp('stationPanel'))\r",
+                    "    Ext.create('MyApp.view.stationPanel', {fullscreen: true});\r",
+                    "    Ext.getCmp('stationPanel').items.items[2].items.items[0].setData({\"bnTitle\":\"whitehall, Parliment Street Greatet London\",\"bnDes\":\"1.2 miles east of current location\",\"NoOfCy\":\"8\",\"NoOfP\":\"2\",\"Data1\":\"Data Published by TFL 3 minutes ago\",\"Data2\":\"Last checked 30s ago\"});\r",
+                    "   // Ext.getCmp('stationPanel').items.items[3].items.items[0].setData({});\r",
+                    "   // Ext.getCmp('stationPanel').items.items[4].items.items[0].setData({});\r",
+                    "    Ext.getCmp('stationPanel').show({ type: 'slide',duration: 500,direction:'left'});"
+                ]
+            },
+            "designerId": "33027728-213b-4343-bb6b-9314049cd1cf"
+        }
+    ]
+}

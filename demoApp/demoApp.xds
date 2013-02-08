@@ -1,0 +1,80 @@
+{
+    "name": "demoApp",
+    "settings": {
+        "urlPrefix": "",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 678,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000498,
+    "framework": "touch21",
+    "topInstanceFileMap": {
+        "9984d0a2-6ea2-46ae-8401-bcda589dba76": {
+            "paths": [
+                "metadata/view/homePanel",
+                "app/view/override/homePanel.js",
+                "app/view/homePanel.js"
+            ],
+            "className": "homePanel"
+        },
+        "174208e4-65af-49a8-905f-a329442b2867": {
+            "paths": [
+                "metadata/view/stationPanel",
+                "app/view/override/stationPanel.js",
+                "app/view/stationPanel.js"
+            ],
+            "className": "stationPanel"
+        },
+        "7f0afd2c-0343-4be5-8de8-359518d06778": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "a909a81e-f75b-4f93-bf1e-3d1491254e43": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "e1db2e8b-cba9-4cb0-84ae-f3ebb2004185": {
+            "paths": [
+                "metadata/resource/js"
+            ],
+            "className": "js"
+        },
+        "aa62a177-fa36-4ab3-b49d-f6b56a765a41": {
+            "paths": [
+                "metadata/controller/MyController",
+                "app/controller/override/MyController.js",
+                "app/controller/MyController.js"
+            ],
+            "className": "MyController"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "9984d0a2-6ea2-46ae-8401-bcda589dba76",
+            "174208e4-65af-49a8-905f-a329442b2867"
+        ],
+        "store": [],
+        "controller": [
+            "aa62a177-fa36-4ab3-b49d-f6b56a765a41"
+        ],
+        "model": [],
+        "resource": [
+            "7f0afd2c-0343-4be5-8de8-359518d06778",
+            "a909a81e-f75b-4f93-bf1e-3d1491254e43",
+            "e1db2e8b-cba9-4cb0-84ae-f3ebb2004185"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

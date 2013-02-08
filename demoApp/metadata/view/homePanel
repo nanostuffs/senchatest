@@ -1,0 +1,220 @@
+{
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "homePanel",
+        "designer|userAlias": "homePanel",
+        "designer|initialView": true,
+        "id": "homePanel",
+        "itemId": "homePanel"
+    },
+    "id": "ExtBox1-ext-gen2166",
+    "designerId": "9984d0a2-6ea2-46ae-8401-bcda589dba76",
+    "cn": [
+        {
+            "type": "toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "designer|userClassName": "MyToolbar",
+                "docked": "top",
+                "title": "Find Bike Location"
+            },
+            "designerId": "8cc377bb-4f58-4a31-93ae-2cb20d91e0ec",
+            "cn": [
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyButton",
+                        "iconCls": "locate",
+                        "iconMask": true,
+                        "text": null
+                    },
+                    "designerId": "3f94836f-b97a-4d1d-abc9-b6e86a389f23"
+                },
+                {
+                    "type": "spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MySpacer"
+                    },
+                    "designerId": "444d44de-d201-4ba6-b08e-3171e769241b"
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyButton1",
+                        "docked": null,
+                        "iconCls": "list",
+                        "iconMask": true,
+                        "text": null
+                    },
+                    "designerId": "fa00ca34-f643-42ee-90aa-547dd4585732",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "handler",
+                                "fn": "handler",
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "implHandler": [
+                                    ""
+                                ]
+                            },
+                            "designerId": "c0c4906a-f1af-4bcd-b652-4551ef5bc4b1"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "start",
+                "container|pack": "center",
+                "designer|userClassName": "MyToolbar1",
+                "docked": "top"
+            },
+            "designerId": "94b0f8f5-5dab-4b29-9eac-b144a3da2449",
+            "cn": [
+                {
+                    "type": "searchfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MySearchField",
+                        "width": "95%",
+                        "label": null
+                    },
+                    "designerId": "be71e5ec-9b60-40db-99a0-316d147c664f"
+                }
+            ]
+        },
+        {
+            "type": "toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyToolbar2",
+                "docked": "bottom"
+            },
+            "designerId": "ed378103-2eb1-4b05-a757-05b55562278b"
+        },
+        {
+            "type": "component",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyComponent3",
+                "cls": [
+                    "map_componentCls"
+                ],
+                "height": "100%",
+                "html": "<div id=\"map_canvas\"  style=\"height: 100%;\" ></div>"
+            },
+            "designerId": "d6096107-f87b-4613-9e54-7488782ce92e"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onHomePanelPainted",
+                "fn": "onHomePanelPainted",
+                "implHandler": [
+                    "var image = 'img/bn.png';\r",
+                    "//<![CDATA[\r",
+                    "if (GBrowserIsCompatible()) { \r",
+                    "\r",
+                    "    function createMarker(point,html,img1) {\r",
+                    "        // ======== Add a \"directions\" link ======\r",
+                    "        html += '<td> <a href=\"#\" onclick=MyApp.app.getControllerInstances()[\"MyApp.controller.MyController\"].onsendNewPage()><img src=\"img/arr.png\"/><\\/a></td></tr></table>';\r",
+                    "\r",
+                    "        var marker = new GMarker(point,img1);\r",
+                    "        GEvent.addListener(marker, \"click\", function() {\r",
+                    "            marker.openInfoWindowHtml(html);\r",
+                    "        });\r",
+                    "        return marker;\r",
+                    "    }\r",
+                    "    var blueIcon = new GIcon(G_DEFAULT_ICON);\r",
+                    "blueIcon.image = image;\r",
+                    "\r",
+                    "    var map = new GMap2(document.getElementById(\"map_canvas\"));\r",
+                    "    map.addControl(new GLargeMapControl());\r",
+                    "    map.addControl(new GMapTypeControl());\r",
+                    "    map.setCenter(new GLatLng(43.907787,-79.359741),8);\r",
+                    "\r",
+                    "    var point = new GLatLng(43.65654,-79.90138);\r",
+                    "    var marker = createMarker(point,'<table><tr><td><div >whitehall, Parliment Str..<br/>28Bikes,30 Spaces<div></td>',blueIcon);\r",
+                    "    map.addOverlay(marker);\r",
+                    "\r",
+                    "    var point = new GLatLng(43.91892,-78.89231);\r",
+                    "    var marker = createMarker(point,'<table><tr><td><div >whitehall, Parliment Str..<br/>28Bikes,30 Spaces<div></td>',blueIcon);\r",
+                    "    map.addOverlay(marker);\r",
+                    "\r",
+                    "    var point = new GLatLng(43.82589,-79.10040);\r",
+                    "\r",
+                    "    var marker = createMarker(point,'<table><tr><td><div >whitehall, Parliment Str..<br/>28Bikes,30 Spaces<div></td>',blueIcon);\r",
+                    "    map.addOverlay(marker);\r",
+                    "\r",
+                    "}\r",
+                    "\r",
+                    "else {\r",
+                    "    alert(\"Sorry, the Google Maps API is not compatible with this browser\");\r",
+                    "}\r",
+                    "\r",
+                    "//]]>"
+                ],
+                "name": "painted"
+            },
+            "designerId": "beeaecd0-c214-4702-9574-f7d5e366d857"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+.x-tab .x-button-icon.list, .x-button .x-button-icon.x-icon-mask.list {
+-webkit-mask-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAADqklEQVRoBe2aS2jUUBSGO7UPX1UrIj4Wgi8EFYvUlUtdKmp14aMggigidSNIFwWRogtBEFwouHMjrkQRLYIKIqKI6MIufBUsglAQLFqrtHX8/tA7jGnuTHAKzcnkwEcy99ybnj8nuTm5aS6fz9dUk9VWk1hpzQSnPeN1EpjD2DTAdHBZH2N/GEa5zyNvdIZpfBNYsaGacS3NRHwEPoHE/YHXsAsa1ScKfK0wCBpjgTbiDDJ02RPwN9oPQ21aBOvy3QNHIcrm0ngW1kc5LbZJ8GnQPeyzhTjafU5r7RK8LEbQa2L0MdFFgkdjRBqnT4zDTH0XCX5SJgzNvo/K9DHjluAL8BUkLGzKbC/cCjus/q7jcXOHAuIUArpgATSCnsO/4A10Qj/4TAXKCESdMN+YqWrPB5UWf/0aKJPbYQMMwVPo4YS8Y+szFR0PYA5IeJJNV/NATgWFMzKt7BYyjK/kZEX/afSf5cYb2A7/I9hAwBWHqDRXlWWC057uLMNZhlN2BqruknaVlta16knmfJgBqka+wyDFh7eCYozWwRaBlRM3EAgmcJWGm2ArLAHVxm/hIb5eRKuujrKlNKoOnwmqv5NsWuS4pAD1wnAevoAyW4xeHo5Dg0rQMLS3gqVFvN26FA/AIdClGba1NJyAdWGH0d95CT4GyrLPVuPY6XNaa5fgVTGC1itjKkyCvbNwkcLfRfumdyX4WQwFL2L0MdFFgi/C+xLRPsd3u4TflEvP4R7QDH0Q9JjRSZDp2fsYrkCpZR7cZiwXrHhQXGhZZyVshMWgIqIPXsJnX7XFOPXdB6q4LNjNwhIPwasS0edSV1r+RGjJyYohWtNSlaarQgVL0u1HQXDSI52s+Nz9OlnHS/xxMsGJT1GFAWYZrvAEJn54luHEp6jCAIMlHncMConZ7Lusj1B46P+0vDZeeJj6mBYIJnCtSW2BdpgHqpr6aL+K6Ffs+2w5jnNg5XNpt8pJ1cEnoQOaQeWiTAt5H6ET7iF8QunICdHLxn3QlTHBT1vSbK8C2g++hTh9H/4ALdIbhnZri3htul+VXV2SUaZsr4AdUU6LbRLcEiNwvTamwtyMXE6MhfuznIbAL8GlZmF3kDh9XN9EbyX4TJkItd51vUwfM24J1mOlG6JWN/pp7wLN1Omw8cerqqVtcBckXP+ZdwM2Q334ceR+4zP3WHKLeCpAVHVpMU+fTTVJqfCQ+DEERk5aFB4a0wRWbChb07KSqv+NU5NWVVnVCf4LlUj5R3Y0QSkAAAAASUVORK5CYII=');
+}
+.x-dock-body{ background: #C4E1ED;}
+.x-title{font-weight: normal;}
+.x-form-inner{ background: #C4E1ED;}
+.StationField {}
+.StationField .x-button{background-image: none;
+    background-color: #FFFFFF;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #FFFFFF), color-stop(3%, #FFFFFF), color-stop(100%, #FFFFFF));
+    background-image: -webkit-linear-gradient(top, #FFFFFF,#FFFFFF 3%,#FFFFFF);
+    background-image: linear-gradient(top, #FFFFFF,#FFFFFF 3%,#FFFFFF);
+    color: #1583B2;
+    border: 1px solid #1583B2;
+}
+.StationField .x-button .x-button-label{text-align: left;    padding: 0.5em;}
+.StationField .x-form-fieldset-inner{background: #C4E1ED;border:0px;}
+.StationField .x-button .x-button-icon.action{
+    background-image: none;background-color: #1583B2;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1583B2), color-stop(3%, #1583B2), color-stop(100%, #1583B2));
+    background-image: -webkit-linear-gradient(top, #1583B2,#1583B2 3%,#1583B2);
+    background-image: linear-gradient(top, #1583B2,#1583B2 3%,#1583B2);
+}
+.StationField .x-button .x-button-icon.favorites{
+    background-image: none;
+    background-color: #FFD800;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #FFD800), color-stop(3%, #FFD800), color-stop(100%, #FFD800));
+    background-image: -webkit-linear-gradient(top, #FFD800,#FFD800 3%,#FFD800);
+    background-image: linear-gradient(top, #FFD800,#FFD800 3%,#FFD800);
+}
+.FielsTitelCls{color:#093A4E;font-size: 0.9em;}
+.FielsDesCls{color:#8A8A8A;font-size: 0.8em;}
+.map_componentCls .x-innerhtml {height: 100%;} 
+.gmnoprint{}

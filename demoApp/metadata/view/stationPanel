@@ -1,0 +1,229 @@
+{
+    "type": "formpanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "stationPanel",
+        "designer|userAlias": "stationPanel",
+        "id": "stationPanel",
+        "itemId": "stationPanel"
+    },
+    "id": "ExtBox1-ext-gen7268",
+    "designerId": "174208e4-65af-49a8-905f-a329442b2867",
+    "cn": [
+        {
+            "type": "toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyToolbar6",
+                "docked": "top",
+                "title": "Station Information"
+            },
+            "designerId": "cea579b9-7575-4dc6-bc41-0f03b359794f",
+            "cn": [
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyButton2",
+                        "ui": "back",
+                        "text": "Back"
+                    },
+                    "designerId": "220e337c-7ca1-4476-b0a7-9ceae8f3e8e6",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "handler",
+                                "fn": "handler",
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "implHandler": [
+                                    "Ext.getCmp('stationPanel').hide({ type: 'slide',duration: 500,direction:'right'});"
+                                ]
+                            },
+                            "designerId": "1b745671-bfe8-4222-9cd9-b0857b5a7e56"
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MySpacer1"
+                    },
+                    "designerId": "abede1d1-98f3-4b9e-8db3-684b68c68f32"
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyButton3",
+                        "iconCls": "refresh",
+                        "iconMask": true,
+                        "text": null
+                    },
+                    "designerId": "7a4f30b6-738f-4315-a8a2-365077b8898b"
+                }
+            ]
+        },
+        {
+            "type": "toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyToolbar7",
+                "docked": "bottom"
+            },
+            "designerId": "962adae8-03a6-4622-891d-e5156c42a8ee"
+        },
+        {
+            "type": "fieldset",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyFieldSet1",
+                "cls": [
+                    "StationField"
+                ],
+                "title": null
+            },
+            "designerId": "8c52a415-2bc2-4e40-9ae9-02174c748195",
+            "cn": [
+                {
+                    "type": "component",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyComponent"
+                    },
+                    "designerId": "f4921ec6-6ceb-4130-b5bd-750cfcc7d6f6",
+                    "cn": [
+                        {
+                            "type": "template",
+                            "reference": {
+                                "name": "tpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "tpl",
+                                "implHandler": [
+                                    "<table width=\"100%\">\r",
+                                    "    <tr><td rowspan=\"2\" width=\"55px\"><img src=\"img/bn.png\" /></td><td class=\"FielsTitelCls\">{bnTitle}</td></tr>\r",
+                                    "    <tr><td class=\"FielsDesCls\">{bnDes}</td></tr>\r",
+                                    "</table>\r",
+                                    "<table width=\"100%\" style=\"margin-top: 5px;margin-bottom: 10px;\">\r",
+                                    "    <tr>\r",
+                                    "       <td style=\"float:left;width: 50%;height: 80px;\">\r",
+                                    "           <table style=\"background: #1583B2;height: 100%;width: 80%;\">\r",
+                                    "               <tr align=\"center\"><td style=\"color:#FFFFFF;font-size: 2em;\">{NoOfCy}</td></tr>\r",
+                                    "               <tr align=\"center\"><td style=\"\"><img src=\"img/Cy.png\"></td></tr>\r",
+                                    "           </table>\r",
+                                    "        </td>\r",
+                                    "        <td style=\"float:right;width: 50%;height: 80px;\">\r",
+                                    "             <table style=\"background: #15B245;height: 100%;width: 80%;float: right;\">\r",
+                                    "               <tr align=\"center\"><td style=\"color:#FFFFFF;font-size: 2em;\">{NoOfP}</td></tr>\r",
+                                    "               <tr align=\"center\"><td style=\"padding-bottom: 0.5em;\"><span style=\"padding: 0.4em 0.7em;background: #FFFFFF;color: #15B245;border-radius: 0.2em;\">p</span></td></tr>\r",
+                                    "           </table>\r",
+                                    "        </td>\r",
+                                    "    </tr>\r",
+                                    "</table>\r",
+                                    "<table width=\"100%\">\r",
+                                    "    <tr><td class=\"FielsTitelCls\">{Data1}</td></tr>\r",
+                                    "    <tr><td class=\"FielsDesCls\">{Data2}</td></tr>\r",
+                                    "</table>"
+                                ],
+                                "designer|displayName": "tpl"
+                            },
+                            "designerId": "e2466ee9-59ee-4153-8db8-d5543b0a51f9"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "fieldset",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyFieldSet",
+                "cls": [
+                    "StationField"
+                ],
+                "title": null
+            },
+            "designerId": "106fb203-34ff-4876-9b6a-0282d1f13995",
+            "cn": [
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyButton6",
+                        "iconCls": "action",
+                        "iconMask": true,
+                        "text": "Route Planning"
+                    },
+                    "designerId": "e778a753-6e37-4ff1-b97b-63c3713e27ff"
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyButton7",
+                        "iconCls": "favorites",
+                        "iconMask": true,
+                        "text": "Add to favorites"
+                    },
+                    "designerId": "87d43915-35e7-4c37-9206-698bafe2a5fc"
+                }
+            ]
+        }
+    ]
+}
